@@ -22,7 +22,8 @@ def bin_to_dec(binary_str):
     return int(binary_str, 2)
 
 def cell_generator(num):
-    cell = [random.uniform(0,1) for _ in range(num)]
+    cell = [random.randint(0,1) for _ in range(num)]
+    print(cell)
     return ''.join(cell)
 
 def main():
